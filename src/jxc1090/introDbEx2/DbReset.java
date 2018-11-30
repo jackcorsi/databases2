@@ -12,7 +12,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DbManager {
+public class DbReset {
 
 	private static final String DB_NAME = "jdbc:postgresql://mod-intro-databases.cs.bham.ac.uk/jxc1090";
 	private static final String USERNAME = "jxc1090";
@@ -20,7 +20,7 @@ public class DbManager {
 	private static Connection conn;
 
 	private static BufferedReader src_DbInit = new BufferedReader(
-			new InputStreamReader(DbManager.class.getResourceAsStream("/DbInit.sql")));
+			new InputStreamReader(DbReset.class.getResourceAsStream("/DbInit.sql")));
 
 	public static void main(String[] args) {
 		
