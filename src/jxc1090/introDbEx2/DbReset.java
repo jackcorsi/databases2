@@ -20,7 +20,7 @@ public class DbReset {
 	private static Connection conn;
 
 	private static BufferedReader src_DbInit = new BufferedReader(
-			new InputStreamReader(DbReset.class.getResourceAsStream("/DbInit.sql")));
+			new InputStreamReader(DbReset.class.getResourceAsStream("/DbReset.sql")));
 
 	public static void main(String[] args) {
 		
