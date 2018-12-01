@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS Party, Entertainment, Menu, Venue;
 
 CREATE TABLE Venue (
-	vid INTEGER,
+	vid SERIAL,
 	name TEXT,
 	venuecost MONEY,
 	
@@ -11,7 +11,7 @@ CREATE TABLE Venue (
 );
 
 CREATE TABLE Menu (
-	mid INTEGER,
+	mid SERIAL,
 	description TEXT,
 	costprice MONEY,
 	
@@ -21,7 +21,7 @@ CREATE TABLE Menu (
 );
 
 CREATE TABLE Entertainment (
-	eid INTEGER,
+	eid SERIAL,
 	description TEXT,
 	costprice MONEY,
 	
@@ -31,7 +31,7 @@ CREATE TABLE Entertainment (
 );
 
 CREATE TABLE Party (
-	pid INTEGER,
+	pid SERIAL,
 	name TEXT,
 	mid INTEGER,
 	vid INTEGER,
