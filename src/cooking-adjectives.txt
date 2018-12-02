@@ -1,16 +1,49 @@
-cooked
-baked
-grated
-grilled
-melted
-a pinch of
-scrambled
-sliced
-blended
-boiled
-freshly prepared
-breaded
-broiled
-fried
-homemade
-sweet
+ cooked
+ baked
+ grated
+ grilled
+ melted
+ pinch of
+ scrambled
+ sliced
+ blended
+ boiled
+ freshly prepared
+ breaded
+ broiled
+ fried
+ homemade
+ sweet
+ salted
+ caramelised
+ reduced
+ steamed
+ smoked
+ flame grilled
+ decorated
+ flambéed
+ microwaved
+ deep fried
+ roasted
+ toasted
+ freeze dried
+ sun dried
+ glazed
+ spiced
+ marinated
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

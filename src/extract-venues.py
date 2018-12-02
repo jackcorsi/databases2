@@ -1,6 +1,7 @@
 import urllib.request
 import re
 import json
+import time
 citiesFile = open("eventbrite-cities.txt", "r")
 html = citiesFile.read()
 citiesFile.close()
@@ -8,7 +9,7 @@ citiesFile.close()
 cities = re.findall(r"<a.*>(.*)<\/a>", html)
 
 eventsFile = open("eventbrite-events.txt", "w")
-venuesFile = open("eventbrite-venues.txt", "w")
+#venuesFile = open("eventbrite-venues.txt", "w")
 
 numberOfEvents = 0
 yetToBeDetermined = 0
@@ -25,7 +26,7 @@ for city in cities:
         url += city
         url += "/all-events/?page="
         url += str(page)
-        url += "&tags=Party%2CChristmas"
+        url += "&tags=Party"
         print(url)
         try:
             html = urllib.request.urlopen(url).read().decode("utf-8")
@@ -45,22 +46,23 @@ for city in cities:
             location = event["location"]
             locName = location["name"]
             
-            if locName != None:
-                if "address" in location:
-                    address = location["address"]
-                    if "addressLocality" in address:
-                        addressLocality = address["addressLocality"]
-                        if addressLocality != None:
-                            locName += ", " + address["addressLocality"]
+            #if locName != None:
+             #   if "address" in location:
+              #      address = location["address"]
+               #     if "addressLocality" in address:
+                #        addressLocality = address["addressLocality"]
+                 #       if addressLocality != None:
+                  #          locName += ", " + address["addressLocality"]
                         
-                venuesFile.write(locName + "\n")
+                #venuesFile.write(locName + "\n")
                         
             numberOfEvents += 1
 
         page += 1
+        time.sleep(0.1) #For safety
         
     print("EVENTS")
     print(numberOfEvents)
         
 eventsFile.close()
-venuesFile.close()
+#venuesFile.close()

@@ -1,5 +1,5 @@
-inFilePath = "eventbrite-bands.txt"
-outFilePath = "eventbrite-bands-filtered.txt"
+inFilePath = "eventbrite-venues.txt"
+outFilePath = "eventbrite-venues-filtered.txt"
 
 inFile = open(inFilePath, "r")
 outFile = open(outFilePath, "w")
