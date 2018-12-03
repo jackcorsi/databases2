@@ -178,7 +178,7 @@ public class DbReset {
             int hour = rand.nextInt(24);
             int minute = rand.nextInt(6) * 10; //timing
             Calendar cal = new GregorianCalendar();
-            cal.setTimeInMillis(0l); //0 initialising this prevents random subsecond values for some reason
+            cal.setTimeInMillis(0l); //0 initialising this prevents random sub-second values for some reason
             cal.set(year, GregorianCalendar.DECEMBER, date, hour, minute, 0);
             stmt.setTimestamp(6, new Timestamp(cal.getTimeInMillis())); //timing
             stmt.setInt(7, rand.nextInt(MAX_NUMBER_OF_GUESTS + 1)); //numberofguests
