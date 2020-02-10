@@ -1,0 +1,1 @@
+Databases module assignment involving populating, reading from and updating a PostgreSQL database from a Java client. The DB is filled with sample data using various means, including social event data scraped from the Eventbrite website with a Python script, and a rule based "food item generator" I came up with that yielded rather amusing results.
