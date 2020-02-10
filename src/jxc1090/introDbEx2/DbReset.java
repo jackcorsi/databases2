@@ -18,6 +18,7 @@ public class DbReset {
 
     private static final String DB_NAME = "jdbc:postgresql://mod-intro-databases.cs.bham.ac.uk/jxc1090";
     private static final String USERNAME = "jxc1090";
+    //Yeah, still no
     private static final String PASSWORD = "a0gsd8vrru";
 
     private static final double MAX_VENUECOST = 1000.0;

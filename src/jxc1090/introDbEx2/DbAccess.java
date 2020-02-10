@@ -13,6 +13,7 @@ public class DbAccess {
 
     private static final String DB_NAME = "jdbc:postgresql://mod-intro-databases.cs.bham.ac.uk/jxc1090";
     private static final String USERNAME = "jxc1090";
+    //Note from future Jack - no, this endpoint and login will not still work. Calm down
     private static final String PASSWORD = "a0gsd8vrru";
     private static final String DATE_PARSE_FORMAT = "dd/MM/yyyy HH:mm";
     private static final SimpleDateFormat dateParser = new SimpleDateFormat(DATE_PARSE_FORMAT);
